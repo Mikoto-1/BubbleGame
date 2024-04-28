@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64C88298-297F-430A-A155-B9AD3528A229}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BubbleGame</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BubbleGame.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BubbleGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BubbleGame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\background.bmp" />
+    <Image Include="resources\bitmap1.bmp" />
+    <Image Include="resources\blocks.bmp" />
+    <Image Include="resources\blocks_boom.bmp" />
+    <Image Include="resources\boom_prop.bmp" />
+    <Image Include="resources\boy.bmp" />
+    <Image Include="resources\boy1.bmp" />
+    <Image Include="resources\bubble.bmp" />
+    <Image Include="resources\bubble1.bmp" />
+    <Image Include="resources\character_1.bmp" />
+    <Image Include="resources\character_2.bmp" />
+    <Image Include="resources\character_3.bmp" />
+    <Image Include="resources\character_select.bmp" />
+    <Image Include="resources\continue.bmp" />
+    <Image Include="resources\exploding_bubble1.bmp" />
+    <Image Include="resources\exploding_bubble2.bmp" />
+    <Image Include="resources\game_help.bmp" />
+    <Image Include="resources\game_over.bmp" />
+    <Image Include="resources\game_paused.bmp" />
+    <Image Include="resources\game_start.bmp" />
+    <Image Include="resources\girl1.bmp" />
+    <Image Include="resources\go_back.bmp" />
+    <Image Include="resources\health_prop.bmp" />
+    <Image Include="resources\help_background.bmp" />
+    <Image Include="resources\lego.bmp" />
+    <Image Include="resources\main_menu.bmp" />
+    <Image Include="resources\main_menu_confirm.bmp" />
+    <Image Include="resources\map_1.bmp" />
+    <Image Include="resources\map_2.bmp" />
+    <Image Include="resources\map_3.bmp" />
+    <Image Include="resources\map_select.bmp" />
+    <Image Include="resources\girl.bmp" />
+    <Image Include="resources\Grass.bmp" />
+    <Image Include="resources\icon.ico" />
+    <Image Include="resources\mode_1.bmp" />
+    <Image Include="resources\mode_2.bmp" />
+    <Image Include="resources\mode_3.bmp" />
+    <Image Include="resources\new_game.bmp" />
+    <Image Include="resources\new_game_confirm.bmp" />
+    <Image Include="resources\no.bmp" />
+    <Image Include="resources\not_now.bmp" />
+    <Image Include="resources\one_more_game.bmp" />
+    <Image Include="resources\pause.bmp" />
+    <Image Include="resources\seaside.bmp" />
+    <Image Include="resources\select1_background.bmp" />
+    <Image Include="resources\selected.bmp" />
+    <Image Include="resources\select_background_1.bmp" />
+    <Image Include="resources\skin_select.bmp" />
+    <Image Include="resources\speeding_prop.bmp" />
+    <Image Include="resources\START.bmp" />
+    <Image Include="resources\supplement_prop.bmp" />
+    <Image Include="resources\title1.bmp" />
+    <Image Include="resources\victory.bmp" />
+    <Image Include="resources\yes.bmp" />
+    <Image Include="title.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
